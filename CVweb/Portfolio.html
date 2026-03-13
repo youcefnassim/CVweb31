@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Youcef Nassim</title>
+    <meta name="description" content="Découvrez les projets web de Youcef Nassim: sites, apps et expériences digitales.">
+    <meta property="og:title" content="Portfolio | Youcef Nassim">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-loaded">
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo">Y<span>oucef Nassim</span>.</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="index.html" data-i18n="nav_home">Accueil</a>
+            <a href="À Propos.html" data-i18n="nav_about">À Propos</a>
+            <a href="CV.html" data-i18n="nav_resume">CV</a>
+            <a href="Services.html" data-i18n="nav_services">Services</a>
+            <a href="Portfolio.html" class="active" data-i18n="nav_portfolio">Portfolio</a>
+            <a href="Offres.html" data-i18n="nav_offers">Offres</a>
+            <a href="Contact.html" data-i18n="nav_contact">Contact</a>
+        </nav>
+        <div class="header-toggles" style="display: flex; gap: 1rem; align-items: center; margin-left: 2rem;">
+            <button id="theme-toggle" class="toggle-btn" style="background: transparent; border: 1px solid var(--text-color); color: var(--text-color); border-radius: 50%; width: 35px; height: 35px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; transition: 0.3s;"><i class='bx bx-moon'></i></button>
+            <button id="lang-toggle" class="toggle-btn" style="background: transparent; border: 1px solid var(--text-color); color: var(--text-color); border-radius: 20px; padding: 0.5rem 1rem; cursor: pointer; font-weight: 600; transition: 0.3s;">FR</button>
+        </div>
+
+    </header>
+
+    <!-- Section Portfolio -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Derniers <span>Projets</span></h2>
+
+        <div class="portfolio-container">
+            <!-- Projet Educmed -->
+            <div class="portfolio-box">
+                <img src="img/20.jpg" alt="Projet Educmed">
+                <div class="portfolio-layer">
+                    <h4>Educmed</h4>
+                    <p>Plateforme éducative médicale</p>
+                    <a href="case-study.html?project=educmed" class="case-study-btn"><i class='bx bx-book-open'></i> Étude de Cas</a>
+                    <button class="gallery-btn" data-project="educmed">
+                        <i class='bx bx-images'></i> Voir la galerie
+                    </button>
+                </div>
+            </div>
+
+            <!-- Projet Gym131 -->
+            <div class="portfolio-box">
+                <img src="img/30.jpg" alt="Projet Gym131">
+                <div class="portfolio-layer">
+                    <h4>Gym131</h4>
+                    <p>Site web pour salle de sport</p>
+                    <a href="case-study.html?project=gym131" class="case-study-btn"><i class='bx bx-book-open'></i> Étude de Cas</a>
+                    <button class="gallery-btn" data-project="gym131">
+                        <i class='bx bx-images'></i> Voir la galerie
+                    </button>
+                </div>
+            </div>
+
+            <!-- Projet CoffeeShop -->
+            <div class="portfolio-box">
+                <img src="img/11.jpg" alt="Projet CoffeeShop">
+                <div class="portfolio-layer">
+                    <h4>CoffeeShop</h4>
+                    <p>Site vitrine pour café boutique</p>
+                    <a href="case-study.html?project=coffeeshop" class="case-study-btn"><i class='bx bx-book-open'></i> Étude de Cas</a>
+                    <button class="gallery-btn" data-project="coffeeshop">
+                        <i class='bx bx-images'></i> Voir la galerie
+                    </button>
+                </div>
+            </div>
+
+            <!-- Projet DNC School -->
+            <div class="portfolio-box">
+                <img src="img/school1.jpg" alt="Projet DNC School">
+                <div class="portfolio-layer">
+                    <h4>DNC School</h4>
+                    <p>Site web éducatif moderne</p>
+                    <a href="case-study.html?project=dncschool" class="case-study-btn"><i class='bx bx-book-open'></i> Étude de Cas</a>
+                    <button class="gallery-btn" data-project="dncschool">
+                        <i class='bx bx-images'></i> Voir la galerie
+                    </button>
+                </div>
+            </div>
+
+            <!-- Projet Dentilus3 -->
+            <div class="portfolio-box">
+                <img src="img/pic 131.png" alt="Projet Dentilus3">
+                <div class="portfolio-layer">
+                    <h4>Dentilus3</h4>
+                    <p>Site web pour cabinet dentaire</p>
+                    <a href="case-study.html?project=dentilus3" class="case-study-btn"><i class='bx bx-book-open'></i> Étude de Cas</a>
+                    <button class="gallery-btn" data-project="dentilus3">
+                        <i class='bx bx-images'></i> Voir la galerie
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modale de galerie -->
+    <div class="gallery-modal" id="galleryModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 class="modal-title">Galerie du projet</h3>
+            <div class="gallery-container">
+                <div class="main-image">
+                    <img src="" alt="" id="mainGalleryImage">
+                    <div class="image-counter">
+                        <span id="currentImage">1</span> / <span id="totalImages">0</span>
+                    </div>
+                </div>
+                <div class="image-thumbnails" id="thumbnailContainer"></div>
+            </div>
+            <div class="gallery-controls">
+                <button class="gallery-prev"><i class='bx bx-chevron-left'></i></button>
+                <button class="gallery-next"><i class='bx bx-chevron-right'></i></button>
+            </div>
+            <div class="project-info">
+                <p id="projectDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Don't Copyright &copy; 2025 by Youcef Nassim | Muchas gracias afición SUIIIIIIII.</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <div class="chatbot-header-info">
+                <div class="chatbot-avatar">
+                    <i class='bx bx-bot'></i>
+                </div>
+                <div>
+                    <h3>Assistant Youcef</h3>
+                    <p>En ligne</p>
+                </div>
+            </div>
+            <button class="chatbot-close" id="chatbotClose">
+                <i class='bx bx-x'></i>
+            </button>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages">
+            <div class="message bot-message">
+                <div class="message-avatar">
+                    <i class='bx bx-bot'></i>
+                </div>
+                <div class="message-content">
+                    <p>Bonjour ! Je suis l'assistant de Youcef Nassim. Comment puis-je vous aider aujourd'hui ?</p>
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-input-container">
+            <input type="text" id="chatbotInput" placeholder="Tapez votre message..." class="chatbot-input">
+            <button id="chatbotSend" class="chatbot-send-btn">
+                <i class='bx bx-send'></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Chatbot Toggle Button -->
+    <button class="chatbot-toggle" id="chatbotToggle">
+        <i class='bx bx-message-rounded'></i>
+        <span class="chatbot-notification"></span>
+    </button>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youcef Nassim | Portfolio Créatif</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-loaded">
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo">Y<span>oucef Nassim</span>.</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="index.html" data-i18n="nav_home">Accueil</a>
+            <a href="À Propos.html" class="active" data-i18n="nav_about">À Propos</a>
+            <a href="CV.html" data-i18n="nav_resume">CV</a>
+            <a href="Services.html" data-i18n="nav_services">Services</a>
+            <a href="Portfolio.html" data-i18n="nav_portfolio">Portfolio</a>
+            <a href="Offres.html" data-i18n="nav_offers">Offres</a>
+            <a href="Contact.html" data-i18n="nav_contact">Contact</a>
+        </nav>
+        <div class="header-toggles" style="display: flex; gap: 1rem; align-items: center; margin-left: 2rem;">
+            <button id="theme-toggle" class="toggle-btn" style="background: transparent; border: 1px solid var(--text-color); color: var(--text-color); border-radius: 50%; width: 35px; height: 35px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; transition: 0.3s;"><i class='bx bx-moon'></i></button>
+            <button id="lang-toggle" class="toggle-btn" style="background: transparent; border: 1px solid var(--text-color); color: var(--text-color); border-radius: 20px; padding: 0.5rem 1rem; cursor: pointer; font-weight: 600; transition: 0.3s;">FR</button>
+        </div>
+
+    </header>
+
+    <!-- Section À Propos -->
+    <section class="about" id="about">
+        <h2 class="heading">À Propos de <span>Moi</span></h2>
+
+        <div class="about-img">
+            <img src="img/phtoo de profile.png" alt="Photo about">
+            <span class="circle-spin"></span>
+        </div>
+
+        <div class="about-content">
+            <h3>Designer & Développeur Frontend</h3>
+            <p>Passionné par la création d'interfaces utilisateur intuitives et esthétiques, je combine design et code pour produire des expériences digitales exceptionnelles. Mon approche centrée sur l'utilisateur et mon attention aux détails permettent de créer des produits à la fois beaux et fonctionnels.</p>
+            
+            
+    <!-- Tech Stack Marquee -->
+    <div class="tech-marquee-container">
+        <div class="tech-marquee">
+            <div class="tech-marquee-content">
+                <i class="fab fa-html5"></i> <span>HTML5</span>
+                <i class="fab fa-css3-alt"></i> <span>CSS3</span>
+                <i class="fab fa-js"></i> <span>JavaScript</span>
+                <i class="fab fa-react"></i> <span>React</span>
+                <i class="fab fa-vuejs"></i> <span>Vue.js</span>
+                <i class="fab fa-node-js"></i> <span>Node.js</span>
+                <i class="fab fa-figma"></i> <span>Figma</span>
+                <i class="fab fa-git-alt"></i> <span>Git</span>
+                <i class="fab fa-github"></i> <span>GitHub</span>
+            </div>
+            <!-- Duplicate for infinite scroll loop -->
+            <div class="tech-marquee-content">
+                <i class="fab fa-html5"></i> <span>HTML5</span>
+                <i class="fab fa-css3-alt"></i> <span>CSS3</span>
+                <i class="fab fa-js"></i> <span>JavaScript</span>
+                <i class="fab fa-react"></i> <span>React</span>
+                <i class="fab fa-vuejs"></i> <span>Vue.js</span>
+                <i class="fab fa-node-js"></i> <span>Node.js</span>
+                <i class="fab fa-figma"></i> <span>Figma</span>
+                <i class="fab fa-git-alt"></i> <span>Git</span>
+                <i class="fab fa-github"></i> <span>GitHub</span>
+            </div>
+        </div>
+    </div>
+            <div class="skills">
+                <h3>Mes Compétences</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-figma"></i>
+                        <span>Figma</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-paint-brush"></i>
+                        <span>UI/UX</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Achievements Counter Gallery -->
+            <div class="achievements-gallery-wrapper">
+                <button class="gallery-nav-btn prev-btn" id="achievePrev" aria-label="Précédent">
+                    <i class='bx bx-chevron-left'></i>
+                </button>
+
+                <div class="achievements-section" id="achievements">
+                    <div class="achievement-box">
+                        <i class='bx bx-briefcase'></i>
+                        <h3 class="counter" data-target="25">0</h3>
+                        <p data-i18n="achieve_projects">Projets Réalisés</p>
+                    </div>
+                    <div class="achievement-box">
+                        <i class='bx bx-code-alt'></i>
+                        <h3 class="counter" data-target="50000">0</h3>
+                        <p data-i18n="achieve_lines">Lignes de Code</p>
+                    </div>
+                    <div class="achievement-box">
+                        <i class='bx bx-time'></i>
+                        <h3 class="counter" data-target="3">0</h3>
+                        <p data-i18n="achieve_exp">Ans d'Expérience</p>
+                    </div>
+                    <div class="achievement-box">
+                        <i class='bx bx-smile'></i>
+                        <h3 class="counter" data-target="10">0</h3>
+                        <p data-i18n="achieve_clients">Clients Satisfaits</p>
+                    </div>
+                    <div class="achievement-box">
+                        <i class='bx bx-certification'></i>
+                        <h3 class="counter" data-target="5">0</h3>
+                        <p data-i18n="achieve_certs">Certifications</p>
+                    </div>
+                    <div class="achievement-box">
+                        <i class='bx bxl-github'></i>
+                        <h3 class="counter" data-target="1500">0</h3>
+                        <p data-i18n="achieve_commits">Commits GitHub</p>
+                    </div>
+                    <div class="achievement-box">
+                        <i class='bx bx-palette'></i>
+                        <h3 class="counter" data-target="500">0</h3>
+                        <p data-i18n="achieve_design">Heures de Design</p>
+                    </div>
+                    <div class="achievement-box">
+                        <i class='bx bx-terminal'></i>
+                        <h3 class="counter" data-target="8">0</h3>
+                        <p data-i18n="achieve_langs">Langages Maîtrisés</p>
+                    </div>
+                    <div class="achievement-box">
+                        <i class='bx bx-git-repo-forked'></i>
+                        <h3 class="counter" data-target="4">0</h3>
+                        <p data-i18n="achieve_oss">Open Source</p>
+                    </div>
+                    <div class="achievement-box">
+                        <i class='bx bx-coffee'></i>
+                        <h3 class="counter" data-target="1200">0</h3>
+                        <p data-i18n="achieve_coffee">Tasses de Café</p>
+                    </div>
+                </div>
+
+                <button class="gallery-nav-btn next-btn" id="achieveNext" aria-label="Suivant">
+                    <i class='bx bx-chevron-right'></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Don't Copyright &copy; 2025 by Youcef Nassim | Muchas gracias afición SUIIIIIIII.</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <div class="chatbot-header-info">
+                <div class="chatbot-avatar">
+                    <i class='bx bx-bot'></i>
+                </div>
+                <div>
+                    <h3>Assistant Youcef</h3>
+                    <p>En ligne</p>
+                </div>
+            </div>
+            <button class="chatbot-close" id="chatbotClose">
+                <i class='bx bx-x'></i>
+            </button>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages">
+            <div class="message bot-message">
+                <div class="message-avatar">
+                    <i class='bx bx-bot'></i>
+                </div>
+                <div class="message-content">
+                    <p>Bonjour ! Je suis l'assistant de Youcef Nassim. Comment puis-je vous aider aujourd'hui ?</p>
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-input-container">
+            <input type="text" id="chatbotInput" placeholder="Tapez votre message..." class="chatbot-input">
+            <button id="chatbotSend" class="chatbot-send-btn">
+                <i class='bx bx-send'></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Chatbot Toggle Button -->
+    <button class="chatbot-toggle" id="chatbotToggle">
+        <i class='bx bx-message-rounded'></i>
+        <span class="chatbot-notification"></span>
+    </button>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

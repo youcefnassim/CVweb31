@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offres | Youcef Nassim</title>
+    <meta name="description" content="Packs et offres de services web disponibles avec Youcef Nassim.">
+    <meta property="og:title" content="Offres | Youcef Nassim">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-loaded">
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo">Y<span>oucef Nassim</span>.</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="index.html" data-i18n="nav_home">Accueil</a>
+            <a href="À Propos.html" data-i18n="nav_about">À Propos</a>
+            <a href="CV.html" data-i18n="nav_resume">CV</a>
+            <a href="Services.html" data-i18n="nav_services">Services</a>
+            <a href="Portfolio.html" data-i18n="nav_portfolio">Portfolio</a>
+            <a href="Offres.html" class="active" data-i18n="nav_offers">Offres</a>
+            <a href="Contact.html" data-i18n="nav_contact">Contact</a>
+        </nav>
+        <div class="header-toggles" style="display: flex; gap: 1rem; align-items: center; margin-left: 2rem;">
+            <button id="theme-toggle" class="toggle-btn" style="background: transparent; border: 1px solid var(--text-color); color: var(--text-color); border-radius: 50%; width: 35px; height: 35px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; transition: 0.3s;"><i class='bx bx-moon'></i></button>
+            <button id="lang-toggle" class="toggle-btn" style="background: transparent; border: 1px solid var(--text-color); color: var(--text-color); border-radius: 20px; padding: 0.5rem 1rem; cursor: pointer; font-weight: 600; transition: 0.3s;">FR</button>
+        </div>
+
+    </header>
+
+    <!-- Section Offres -->
+    <section class="offers" id="offers">
+        <h2 class="heading">Nos <span data-i18n="nav_offers">Offres</span> de Création de Sites Web</h2>
+        
+        <div class="offers-container">
+            <!-- Offre Starter -->
+            <div class="offer-card">
+                <div class="offer-header">
+                    <i class='bx bx-rocket'></i>
+                    <h3>Offre Starter</h3>
+                    <p class="offer-subtitle">Parfait pour débuter en ligne</p>
+                </div>
+                <div class="offer-price">
+                    <span class="price-amount">15 000 DA</span>
+                    <span class="price-note">Site One Page</span>
+                </div>
+                <ul class="offer-features">
+                    <li><i class='bx bx-check'></i> Page unique moderne et responsive</li>
+                    <li><i class='bx bx-check'></i> Design personnalisé et professionnel</li>
+                    <li><i class='bx bx-check'></i> Formulaire de contact intégré</li>
+                    <li><i class='bx bx-check'></i> Intégration des réseaux sociaux</li>
+                    <li><i class='bx bx-check'></i> Optimisation SEO de base</li>
+                    <li><i class='bx bx-check'></i> Compatible mobile et tablette</li>
+                    <li><i class='bx bx-check'></i> Support technique 1 mois</li>
+                </ul>
+                <div class="offer-footer">
+                    <a href="#contact" class="offer-btn">Choisir cette offre</a>
+                </div>
+            </div>
+
+            <!-- Offre Business -->
+            <div class="offer-card featured-offer">
+                <div class="offer-badge">Populaire</div>
+                <div class="offer-header">
+                    <i class='bx bx-briefcase'></i>
+                    <h3>Offre Business</h3>
+                    <p class="offer-subtitle">Idéal pour les entreprises</p>
+                </div>
+                <div class="offer-price">
+                    <span class="price-amount">25 000 DA</span>
+                    <span class="price-note">Site Vitrine Multi-pages</span>
+                </div>
+                <ul class="offer-features">
+                    <li><i class='bx bx-check'></i> 3 à 5 pages (Accueil, Services, À propos, Contact...)</li>
+                    <li><i class='bx bx-check'></i> Design personnalisé et moderne</li>
+                    <li><i class='bx bx-check'></i> Optimisation mobile complète (responsive)</li>
+                    <li><i class='bx bx-check'></i> Galerie d'images intégrée</li>
+                    <li><i class='bx bx-check'></i> Formulaire de contact avancé</li>
+                    <li><i class='bx bx-check'></i> Intégration Google Maps</li>
+                    <li><i class='bx bx-check'></i> Optimisation SEO avancée</li>
+                    <li><i class='bx bx-check'></i> Support technique 3 mois</li>
+                    <li><i class='bx bx-check'></i> Formation à la gestion du site</li>
+                </ul>
+                <div class="offer-footer">
+                    <a href="#contact" class="offer-btn">Choisir cette offre</a>
+                </div>
+            </div>
+
+            <!-- Offre Premium -->
+            <div class="offer-card">
+                <div class="offer-header">
+                    <i class='bx bx-crown'></i>
+                    <h3>Offre Premium</h3>
+                    <p class="offer-subtitle">Solution complète sur mesure</p>
+                </div>
+                <div class="offer-price">
+                    <span class="price-amount">Sur devis</span>
+                    <span class="price-note">Site Professionnel</span>
+                </div>
+                <ul class="offer-features">
+                    <li><i class='bx bx-check'></i> Site web illimité de pages</li>
+                    <li><i class='bx bx-check'></i> Fonctionnalités avancées (blog, réservation, e-commerce...)</li>
+                    <li><i class='bx bx-check'></i> Design 100% sur mesure</li>
+                    <li><i class='bx bx-check'></i> Système de gestion de contenu (CMS)</li>
+                    <li><i class='bx bx-check'></i> Intégration de paiement en ligne</li>
+                    <li><i class='bx bx-check'></i> Optimisation SEO professionnelle</li>
+                    <li><i class='bx bx-check'></i> Mise en ligne et configuration</li>
+                    <li><i class='bx bx-check'></i> Accompagnement complet</li>
+                    <li><i class='bx bx-check'></i> Support technique 6 mois</li>
+                    <li><i class='bx bx-check'></i> Maintenance et mises à jour</li>
+                </ul>
+                <div class="offer-footer">
+                    <a href="#contact" class="offer-btn">Demander un devis</a>
+                </div>
+            </div>
+        </div>
+
+        <p class="offers-note">Toutes les offres incluent l'hébergement et le nom de domaine pour la première année. Les tarifs sont indicatifs et peuvent varier selon la complexité du projet.</p>
+    </section>
+
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Don't Copyright &copy; 2025 by Youcef Nassim | Muchas gracias afición SUIIIIIIII.</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <div class="chatbot-header-info">
+                <div class="chatbot-avatar">
+                    <i class='bx bx-bot'></i>
+                </div>
+                <div>
+                    <h3>Assistant Youcef</h3>
+                    <p>En ligne</p>
+                </div>
+            </div>
+            <button class="chatbot-close" id="chatbotClose">
+                <i class='bx bx-x'></i>
+            </button>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages">
+            <div class="message bot-message">
+                <div class="message-avatar">
+                    <i class='bx bx-bot'></i>
+                </div>
+                <div class="message-content">
+                    <p>Bonjour ! Je suis l'assistant de Youcef Nassim. Comment puis-je vous aider aujourd'hui ?</p>
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-input-container">
+            <input type="text" id="chatbotInput" placeholder="Tapez votre message..." class="chatbot-input">
+            <button id="chatbotSend" class="chatbot-send-btn">
+                <i class='bx bx-send'></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Chatbot Toggle Button -->
+    <button class="chatbot-toggle" id="chatbotToggle">
+        <i class='bx bx-message-rounded'></i>
+        <span class="chatbot-notification"></span>
+    </button>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

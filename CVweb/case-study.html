@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youcef Nassim | Étude de cas</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-loaded">
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html" class="logo">Y<span>oucef Nassim</span>.</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="index.html" data-i18n="nav_home">Accueil</a>
+            <a href="À Propos.html" data-i18n="nav_about">À Propos</a>
+            <a href="CV.html" data-i18n="nav_resume">CV</a>
+            <a href="Services.html" data-i18n="nav_services">Services</a>
+            <a href="Portfolio.html" class="active" data-i18n="nav_portfolio">Portfolio</a>
+            <a href="Offres.html" data-i18n="nav_offers">Offres</a>
+            <a href="Contact.html" data-i18n="nav_contact">Contact</a>
+        </nav>
+        <div class="header-toggles" style="display: flex; gap: 1rem; align-items: center; margin-left: 2rem;">
+            <button id="theme-toggle" class="toggle-btn" style="background: transparent; border: 1px solid var(--text-color); color: var(--text-color); border-radius: 50%; width: 35px; height: 35px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; transition: 0.3s;"><i class='bx bx-moon'></i></button>
+            <button id="lang-toggle" class="toggle-btn" style="background: transparent; border: 1px solid var(--text-color); color: var(--text-color); border-radius: 20px; padding: 0.5rem 1rem; cursor: pointer; font-weight: 600; transition: 0.3s;">FR</button>
+        </div>
+    </header>
+
+    <section class="case-study" style="padding-top: 15rem; min-height: 100vh;">
+        <div class="back-link" style="margin-bottom: 3rem;">
+            <a href="Portfolio.html" class="btn btn-outline" style="border: none;"><i class='bx bx-left-arrow-alt'></i> Retour au Portfolio</a>
+        </div>
+        
+        <h1 class="heading" id="cs-title">Titre du <span>Projet</span></h1>
+        
+        <div class="cs-container" style="display: grid; grid-template-columns: 1fr 350px; gap: 4rem; align-items: start; margin-top: 4rem;">
+            <div class="cs-main">
+                <div class="cs-gallery" id="cs-gallery" style="width: 100%; border-radius: 1.5rem; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.2); margin-bottom: 3rem; background: var(--second-bg-color);">
+                    <!-- Main Image Injected via JS -->
+                </div>
+                
+                <div class="cs-content" style="background: var(--glass-bg); padding: 3rem; border-radius: 1.5rem; border: var(--glass-border); backdrop-filter: var(--glass-blur);">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; color: var(--main-color);">Le Défi</h2>
+                    <p id="cs-challenge" style="font-size: 1.6rem; color: var(--text-color); line-height: 1.6; margin-bottom: 3rem; opacity: 0.9;">Description détaillée à venir...</p>
+                    
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; color: var(--main-color);">La Solution</h2>
+                    <p id="cs-solution" style="font-size: 1.6rem; color: var(--text-color); line-height: 1.6; opacity: 0.9;">Description détaillée à venir...</p>
+                </div>
+            </div>
+            
+            <div class="cs-sidebar" style="background: var(--glass-bg); padding: 3rem; border-radius: 1.5rem; border: var(--glass-border); backdrop-filter: var(--glass-blur); position: sticky; top: 12rem;">
+                <h3 style="font-size: 2rem; margin-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 1rem;">Détails</h3>
+                
+                <div style="margin-bottom: 2rem;">
+                    <strong style="display: block; font-size: 1.4rem; color: var(--main-color); margin-bottom: 0.5rem;">Client</strong>
+                    <span id="cs-client" style="font-size: 1.5rem;">Projet Personnel</span>
+                </div>
+                
+                <div style="margin-bottom: 2rem;">
+                    <strong style="display: block; font-size: 1.4rem; color: var(--main-color); margin-bottom: 0.5rem;">Rôle</strong>
+                    <span style="font-size: 1.5rem;">Frontend Developer & UI Designer</span>
+                </div>
+                
+                <div style="margin-bottom: 2rem;">
+                    <strong style="display: block; font-size: 1.4rem; color: var(--main-color); margin-bottom: 1rem;">Technologies</strong>
+                    <div id="cs-techs" style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                        <!-- Tech chips injected via JS -->
+                    </div>
+                </div>
+                
+                <div style="margin-top: 4rem;">
+                    <a href="#" id="cs-link" class="btn btn-primary" style="width: 100%;" target="_blank">Voir le site en direct <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Don't Copyright &copy; 2025 by Youcef Nassim | Muchas gracias afición SUIIIIIIII.</p>
+        </div>    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Case Study Hydration Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const projectId = urlParams.get('project');
+            
+            // Extended Data for Case Studies
+            const caseStudyData = {
+                'educmed': {
+                    title: 'Educmed',
+                    client: 'Plateforme E-learning',
+                    link: 'https://youcefnassim.github.io/Medstudent31/',
+                    techs: ['HTML', 'CSS', 'JavaScript', 'UI Design'],
+                    challenge: "La création d'une plateforme éducative médicale complète nécessitait une interface extrêmement claire pour organiser une grande quantité de cours, vidéos et documents de manière intuitive pour les étudiants en médecine qui sont souvent pressés par le temps.",
+                    solution: "J'ai conçu un système de tableau de bord épuré avec une navigation latérale collante. La hiérarchie visuelle a été pensée pour mettre en avant la progression des cours et les ressources importantes. Le design est totalement responsive pour permettre l'étude sur mobile lors des déplacements.",
+                    mainImg: 'img/20.jpg'
+                },
+                'gym131': {
+                    title: 'Gym131',
+                    client: 'Salle de Sport Locale',
+                    link: 'https://youcefnassim.github.io/Gym131/',
+                    techs: ['HTML5', 'CSS3', 'JS', 'Animations'],
+                    challenge: "Le client avait besoin d'un site web dynamique qui reflète l'énergie et l'intensité d'une salle de sport moderne. L'objectif était d'encourager les inscriptions en ligne et de présenter clairement les emplois du temps.",
+                    solution: "J'ai utilisé une palette de couleurs agressive et contrastée (sombre avec des accents vifs). L'intégration d'animations au défilement et de grandes images immersives capture l'ambiance du club. Un système de grille personnalisé a été développé pour l'affichage interactif du planning des cours.",
+                    mainImg: 'img/30.jpg'
+                },
+                'coffeeshop': {
+                    title: 'CoffeeShop',
+                    client: 'Café Boutique Artisanal',
+                    link: 'https://youcefnassim.github.io/cofeeshop/',
+                    techs: ['HTML', 'CSS', 'JavaScript'],
+                    challenge: "L'objectif était de retranscrire une ambiance chaleureuse, artisanale et premium à travers l'écran, tout en proposant un menu en ligne facilement consultable et un système de localisation clair.",
+                    solution: "Le design s'appuie sur des tons chauds, des typographies avec empattement pour l'élégance, et un effet glassmorphism subtil. Des micro-interactions douces au survol des produits engagent l'utilisateur, créant une expérience numérique aussi agréable que la dégustation d'un bon café.",
+                    mainImg: 'img/11.jpg'
+                },
+                'dncschool': {
+                    title: 'DNC School',
+                    client: 'Institution Éducative',
+                    link: 'https://dnc-school-58a98.web.app',
+                    techs: ['HTML5', 'CSS3', 'JavaScript', 'Firebase'],
+                    challenge: "Créer un portail éducatif moderne capable d'accueillir à la fois des informations publiques pour les parents et un accès structuré pour les étudiants.",
+                    solution: "L'interface utilisateur a été conçue pour inspirer confiance et professionnalisme. J'ai structuré l'information en blocs clairs, utilisant des espaces blancs généreux. L'accent a été mis sur l'accessibilité et la lisibilité.",
+                    mainImg: 'img/school1.jpg'
+                },
+                'dentilus3': {
+                    title: 'Dentilus3',
+                    client: 'Cabinet Dentaire',
+                    link: 'https://youcefnassim.github.io/dentilus3/',
+                    techs: ['HTML', 'CSS', 'JavaScript'],
+                    challenge: "Rassurer les patients potentiels à travers un web design propre, clinique mais accueillant, tout en facilitant la prise de rendez-vous en ligne.",
+                    solution: "J'ai opté pour un design minimaliste avec beaucoup d'espace blanc et des nuances de bleu et de blanc pour évoquer l'hygiène et la sérénité. L'appel à l'action pour la réservation est toujours visible et facilement accessible sur tous les appareils.",
+                    mainImg: 'img/pic 131.png'
+                }
+            };
+            
+            if(projectId && caseStudyData[projectId]) {
+                const data = caseStudyData[projectId];
+                
+                // Populate DOM
+                document.getElementById('cs-title').innerHTML = `${data.title} <span>Projet</span>`;
+                document.getElementById('cs-client').textContent = data.client;
+                document.getElementById('cs-link').href = data.link;
+                document.getElementById('cs-challenge').textContent = data.challenge;
+                document.getElementById('cs-solution').textContent = data.solution;
+                
+                // Set Image
+                document.getElementById('cs-gallery').innerHTML = `<img src="${data.mainImg}" alt="${data.title}" style="width: 100%; height: auto; display: block; object-fit: cover; max-height: 500px;">`;
+                
+                // Set Techs
+                const techsContainer = document.getElementById('cs-techs');
+                techsContainer.innerHTML = '';
+                data.techs.forEach(tech => {
+                    techsContainer.innerHTML += `<span style="background: rgba(56, 189, 248, 0.1); color: var(--main-color); padding: 0.5rem 1rem; border-radius: 20px; font-size: 1.2rem; font-weight: 500; border: 1px solid rgba(56, 189, 248, 0.2);">${tech}</span>`;
+                });
+            } else {
+                // Handle invalid project ID - Redirect back
+                document.getElementById('cs-challenge').innerHTML = "<span style='color: #ef4444;'>Erreur: Projet introuvable.</span>";
+            }
+        });
+    </script>
+</body>
+</html>
