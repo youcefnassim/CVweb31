@@ -3,12 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youcef Nassim | Portfolio Créatif</title>
+    <title>Youcef Nassim | Développeur Frontend &amp; Designer UX/UI</title>
+    <meta name="description" content="Portfolio de Youcef Nassim - Développeur Frontend et Designer UX/UI créant des expériences digitales captivantes.">
+    <meta property="og:title" content="Youcef Nassim | Développeur Frontend &amp; Designer UX/UI">
+    <meta property="og:description" content="Découvrez mon portfolio de projets web modernes et responsives.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://youcefnassim.github.io/CVweb/">
+    <meta property="og:image" content="img/phtoo de profile.png">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="page-loaded">
     <!-- Header -->
     <header class="header">
         <a href="#" class="logo">Y<span>oucef Nassim</span>.</a>
@@ -16,332 +24,119 @@
         <i class='bx bx-menu' id="menu-icon"></i>
 
         <nav class="navbar">
-            <a href="#home" class="active">Accueil</a>
-            <a href="#about">À Propos</a>
-            <a href="#resume">CV</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a href="index.html" class="active" data-i18n="nav_home">Accueil</a>
+            <a href="À Propos.html" data-i18n="nav_about">À Propos</a>
+            <a href="CV.html" data-i18n="nav_resume">CV</a>
+            <a href="Services.html" data-i18n="nav_services">Services</a>
+            <a href="Portfolio.html" data-i18n="nav_portfolio">Portfolio</a>
+            <a href="Offres.html" data-i18n="nav_offers">Offres</a>
+            <a href="Contact.html" data-i18n="nav_contact">Contact</a>
         </nav>
+        <div class="header-toggles" style="display: flex; gap: 1rem; align-items: center; margin-left: 2rem;">
+            <button id="theme-toggle" class="toggle-btn" style="background: transparent; border: 1px solid var(--text-color); color: var(--text-color); border-radius: 50%; width: 35px; height: 35px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; transition: 0.3s;"><i class='bx bx-moon'></i></button>
+            <button id="lang-toggle" class="toggle-btn" style="background: transparent; border: 1px solid var(--text-color); color: var(--text-color); border-radius: 20px; padding: 0.5rem 1rem; cursor: pointer; font-weight: 600; transition: 0.3s;">FR</button>
+        </div>
+
     </header>
 
     <!-- Section Accueil -->
     <section class="home" id="home">
+        <!-- Floating Chips -->
+        <div class="floating-chip chip-1"><i class='bx bx-code-alt'></i> UI Magic</div>
+        <div class="floating-chip chip-2"><i class='bx bx-paint'></i> Frontend Dev</div>
+        
         <div class="home-content">
-            <h1>Bonjour, Je suis <span>Youcef Nassim</span></h1>
+            <h1 class="glitch-text">Bonjour, Je suis <br><span class="gradient-text">Youcef Nassim</span></h1>
             <div class="text-animate">
                 <h3><span class="multiple-text"></span></h3>
             </div>
-            <p>Designer UX/UI & Développeur Frontend créant des expériences digitales mémorables avec un 1 ans d'expérience. Spécialisé dans les interfaces modernes et les animations fluides.</p>
+            <p>Designer UX/UI & Développeur Frontend créant des expériences digitales captivantes. Passionné par le design <b>glassmorphism</b> et les interfaces web modernes et réactives.</p>
             
             <div class="btn-box">
-                <a href="#resume" class="btn">Voir mon CV</a>
-                <a href="#contact" class="btn">Discutons !</a>
-            </div>
-        </div>
-
-        <div class="home-sci">
-    <a href="https://web.facebook.com/yusuf.nassim.2025/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-facebook'></i></a>
-    <a href="https://x.com/youcef5nassim?t=jWttkvWmE7Of-_HBeMR76Q&s=09" target="_blank" rel="noopener noreferrer"><i class='bx bxl-twitter'></i></a>
-    <a href="https://www.linkedin.com/in/youcef-nassim-ben-maamar-791244219/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin'></i></a>
-    <a href="https://www.instagram.com/yusuf_5_nassim/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-instagram'></i></a>
-    
-    <a href="https://github.com/youcefnassim" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></a>
-    <a href="https://www.tiktok.com/@codeinsight?_t=ZN-8zP3dxFo8yk&_r=1" target="_blank" rel="noopener noreferrer"><i class='bx bxl-tiktok'></i></a>
-</div>
-
-        
-    </section>
-
-    <!-- Section À Propos -->
-    <section class="about" id="about">
-        <h2 class="heading">À Propos de <span>Moi</span></h2>
-
-        <div class="about-img">
-            <img src="img/phtoo de profile.png" alt="Photo about">
-            <span class="circle-spin"></span>
-        </div>
-
-        <div class="about-content">
-            <h3>Designer & Développeur Frontend</h3>
-            <p>Passionné par la création d'interfaces utilisateur intuitives et esthétiques, je combine design et code pour produire des expériences digitales exceptionnelles. Mon approche centrée sur l'utilisateur et mon attention aux détails permettent de créer des produits à la fois beaux et fonctionnels.</p>
-            
-            <div class="skills">
-                <h3>Mes Compétences</h3>
-                <div class="skill-items">
-                    <div class="skill-item">
-                        <i class="fab fa-html5"></i>
-                        <span>HTML5</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-css3-alt"></i>
-                        <span>CSS3</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-js"></i>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-react"></i>
-                        <span>React</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-figma"></i>
-                        <span>Figma</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-paint-brush"></i>
-                        <span>UI/UX</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section CV -->
-    <section class="resume" id="resume">
-        <h2 class="heading">Mon <span>CV</span></h2>
-        
-        <div class="resume-container">
-            <div class="resume-column">
-                <h3 class="title">Éducation</h3>
-                
-                <div class="resume-box">
-                    <div class="resume-content">
-                        <div class="content">
-                            <div class="year"><i class="bx bxs-calendar"></i> 2022 - 2023</div>
-                            <h3>Diplôme en Développement Web</h3>
-                            <p>Institut de Formation en Informatique, Alger</p>
-                            <p>Spécialisation en développement frontend et design d'interface</p>
-                        </div>
-                    </div>
-                    
-                    <div class="resume-content">
-                        <div class="content">
-                            <div class="year"><i class="bx bxs-calendar"></i> 2021 - 2022</div>
-                            <h3>Formation en Design UX/UI</h3>
-                            <p>Cours en ligne - Udemy</p>
-                            <p>Certification en design d'expérience utilisateur et interfaces</p>
-                        </div>
-                    </div>
-                </div>
+                <a href="Portfolio.html" class="btn btn-primary">Voir Projets</a>
+                <a href="#contact" class="btn btn-outline">Me Contacter <i class='bx bx-right-arrow-alt'></i></a>
             </div>
             
-            <div class="resume-column">
-                <h3 class="title">Expérience</h3>
-                
-                <div class="resume-box">
-                    <div class="resume-content">
-                        <div class="content">
-                            <div class="year"><i class="bx bxs-calendar"></i> 2023 - Présent</div>
-                            <h3>Développeur Frontend Freelance</h3>
-                            <p>Auto-entrepreneur</p>
-                            <p>Création de sites web responsives, optimisation UX, intégration de maquettes</p>
-                        </div>
-                    </div>
-                    
-                    <div class="resume-content">
-                        <div class="content">
-                            <div class="year"><i class="bx bxs-calendar"></i> 2022 - 2023</div>
-                            <h3>Stagiaire en Développement Web</h3>
-                            <p>Entreprise XYZ, Alger</p>
-                            <p>Participation à des projets de développement frontend et tests utilisateurs</p>
-                        </div>
-                    </div>
+            <div class="home-sci">
+                <a href="https://github.com/youcefnassim" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/youcef-nassim-ben-maamar-791244219/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://x.com/youcef5nassim?t=jWttkvWmE7Of-_HBeMR76Q&s=09" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com/yusuf_5_nassim/" target="_blank"><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
+
+        <div class="home-code-window">
+            <div class="window-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="window-title">nassim@portfolio: ~</span>
+            </div>
+            <div class="window-body" id="terminal-body" style="height: 250px; overflow-y: auto; display: flex; flex-direction: column; cursor: text;">
+                <div class="terminal-output" id="terminal-output" style="margin-bottom: 10px;">
+                    <span style="color: #61afef;">Welcome to Youcef Nassim's Interactive Terminal v1.0.0</span><br>
+                    <span style="color: #98c379;">Type 'help' to see available commands.</span>
+                </div>
+                <div class="terminal-input-line" style="display: flex; gap: 10px; align-items: center;">
+                    <span class="prompt" style="color: #e5c07b;">visitor@portfolio:~$</span>
+                    <input type="text" id="terminal-input" autocomplete="off" spellcheck="false" style="background: transparent; border: none; color: #abb2bf; font-family: 'Fira Code', monospace; font-size: 1.3rem; outline: none; flex: 1;">
                 </div>
             </div>
         </div>
-        
-       <!-- Section CV -->
-<section class="resume" id="resume">
-    <h2 class="heading">Mon <span>CV</span></h2>
-    
-    <!-- Aperçu du CV -->
-    <div class="cv-preview">
-        <embed src="img/Benmaamar Youcef Nassim.pdf" type="application/pdf" width="100%" height="600px">
-        <p class="preview-note">Aperçu de mon CV - Téléchargez la version complète ci-dessous</p>
-    </div>
-    
-    <!-- Boutons de téléchargement -->
-    <div class="download-section">
-        <h3>Télécharger mon CV complet</h3>
-        <div class="download-buttons">
-            <a href="Benmaamar Youcef Nassim.pdf" download="Benmaamar.pdf" class="download-btn">
-                <i class='bx bxs-download'></i> Version PDF
-            </a>
-            <a href="#" class="download-btn" id="print-cv">
-                <i class='bx bxs-printer'></i> Version Imprimable
-            </a>
-        </div>
-    </div>
-</section>
 
-    <!-- Section Services -->
-    <section class="services" id="services">
-        <h2 class="heading">Mes <span>Services</span></h2>
-
-        <div class="services-container">
-            <div class="services-box">
-                <i class='bx bx-code-alt'></i>
-                <h3>Développement Web</h3>
-                <p>Création de sites web modernes et réactifs avec les dernières technologies comme React, Vue.js et Tailwind CSS.</p>
-                <a href="#" class="btn">Voir plus</a>
-            </div>
-
-            <div class="services-box">
-                <i class='bx bxs-paint'></i>
-                <h3>Design Graphique</h3>
-                <p>Conception d'identités visuelles percutantes, logos et supports print avec une approche minimaliste et efficace.</p>
-                <a href="#" class="btn">Voir plus</a>
-            </div>
-
-            <div class="services-box">
-                <i class='bx bx-mobile-alt'></i>
-                <h3>UI/UX Design</h3>
-                <p>Design d'interfaces utilisateur intuitives et d'expériences utilisateur fluides pour applications mobiles et web.</p>
-                <a href="#" class="btn">Voir plus</a>
-            </div>
+        <!-- Hero Leader Image -->
+        <div class="home-leader-img">
+            <img src="img/leader..jpg" alt="Youcef Nassim - Leader" loading="lazy">
         </div>
     </section>
 
-  
-
-<!-- Section Portfolio -->
-<section class="portfolio" id="portfolio">
-    <h2 class="heading">Derniers <span>Projets</span></h2>
-
-    <div class="portfolio-container">
-        <!-- Projet Educmed -->
-        <div class="portfolio-box">
-            <img src="img/20.jpg" alt="Projet Educmed">
-            <div class="portfolio-layer">
-                <h4>Educmed</h4>
-                <p>Plateforme éducative médicale</p>
-                <a href="https://youcefnassim.github.io/Medstudent31/" target="_blank"><i class='bx bx-link-external'></i></a>
-                <button class="gallery-btn" data-project="educmed">
-                    <i class='bx bx-images'></i> Voir la galerie
-                </button>
-            </div>
-        </div>
-
-        <!-- Projet Gym131 -->
-        <div class="portfolio-box">
-            <img src="img/30.jpg" alt="Projet Gym131">
-            <div class="portfolio-layer">
-                <h4>Gym131</h4>
-                <p>Site web pour salle de sport</p>
-                <a href="https://youcefnassim.github.io/Gym131/" target="_blank"><i class='bx bx-link-external'></i></a>
-                <button class="gallery-btn" data-project="gym131">
-                    <i class='bx bx-images'></i> Voir la galerie
-                </button>
-            </div>
-        </div>
-
-        <!-- Projet CoffeeShop -->
-        <div class="portfolio-box">
-            <img src="img/11.jpg" alt="Projet CoffeeShop">
-            <div class="portfolio-layer">
-                <h4>CoffeeShop</h4>
-                <p>Site vitrine pour café boutique</p>
-                <a href="https://youcefnassim.github.io/cofeeshop/" target="_blank"><i class='bx bx-link-external'></i></a>
-                <button class="gallery-btn" data-project="coffeeshop">
-                    <i class='bx bx-images'></i> Voir la galerie
-                </button>
-            </div>
-        </div>
-
-        <!-- Projet DNC School -->
-        <div class="portfolio-box">
-            <img src="img/school1.jpg" alt="Projet DNC School">
-            <div class="portfolio-layer">
-                <h4>DNC School</h4>
-                <p>Site web éducatif moderne</p>
-                <a href="https://dnc-school-58a98.web.app" target="_blank"><i class='bx bx-link-external'></i></a>
-                <button class="gallery-btn" data-project="dncschool">
-                    <i class='bx bx-images'></i> Voir la galerie
-                </button>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Modale de galerie -->
-<div class="gallery-modal" id="galleryModal">
-    <div class="modal-content">
-        <span class="close-modal">&times;</span>
-        <h3 class="modal-title">Galerie du projet</h3>
-        <div class="gallery-container">
-            <div class="main-image">
-                <img src="" alt="" id="mainGalleryImage">
-                <div class="image-counter">
-                    <span id="currentImage">1</span> / <span id="totalImages">0</span>
-                </div>
-            </div>
-            <div class="image-thumbnails" id="thumbnailContainer"></div>
-        </div>
-        <div class="gallery-controls">
-            <button class="gallery-prev"><i class='bx bx-chevron-left'></i></button>
-            <button class="gallery-next"><i class='bx bx-chevron-right'></i></button>
-        </div>
-        <div class="project-info">
-            <p id="projectDescription"></p>
-        </div>
-    </div>
-</div>
-
-   <!-- Section Contact -->
-<section class="contact" id="contact">
-    <h2 class="heading">Contactez-<span>Moi</span></h2>
-
-    <form action="https://formsubmit.co/youcefnassim60@gmail.com" method="POST">
-        <!-- Champs cachés pour configurer FormSubmit -->
-        <input type="hidden" name="_subject" value="Nouveau message depuis votre portfolio">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" value="https://youcefnassim.github.io/merci.html">
-        <input type="hidden" name="_captcha" value="false">
-        
-        <div class="input-box">
-            <div class="input-field field">
-                <input type="text" name="name" placeholder="Nom Complet" class="input" required>
-                <span class="focus"></span>
-            </div>
-            <div class="input-field field">
-                <input type="email" name="email" placeholder="Adresse Email" class="input" required>
-                <span class="focus"></span>
-            </div>
-        </div>
-
-        <div class="input-box">
-            <div class="input-field field">
-                <input type="tel" name="phone" placeholder="Numéro Téléphone" class="input">
-                <span class="focus"></span>
-            </div>
-            <div class="input-field field">
-                <input type="text" name="subject" placeholder="Sujet du message" class="input" required>
-                <span class="focus"></span>
-            </div>
-        </div>
-
-        <div class="textarea-field field">
-            <textarea name="message" cols="30" rows="10" placeholder="Votre Message" class="textarea" required></textarea>
-            <span class="focus"></span>
-        </div>
-
-        <div class="btn-box btns">
-            <button type="submit" class="btn">Envoyer</button>
-        </div>
-    </form>
-</section>
+    
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-text">
             <p>Don't Copyright &copy; 2025 by Youcef Nassim | Muchas gracias afición SUIIIIIIII.</p>
         </div>
-
-        <div class="footer-iconTop">
-            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
-        </div>
     </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <div class="chatbot-header-info">
+                <div class="chatbot-avatar">
+                    <i class='bx bx-bot'></i>
+                </div>
+                <div>
+                    <h3>Assistant Youcef</h3>
+                    <p>En ligne</p>
+                </div>
+            </div>
+            <button class="chatbot-close" id="chatbotClose">
+                <i class='bx bx-x'></i>
+            </button>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages">
+            <div class="message bot-message">
+                <div class="message-avatar">
+                    <i class='bx bx-bot'></i>
+                </div>
+                <div class="message-content">
+                    <p>Bonjour ! Je suis l'assistant de Youcef Nassim. Comment puis-je vous aider aujourd'hui ?</p>
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-input-container">
+            <input type="text" id="chatbotInput" placeholder="Tapez votre message..." class="chatbot-input">
+            <button id="chatbotSend" class="chatbot-send-btn">
+                <i class='bx bx-send'></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Chatbot Toggle Button -->
+    <button class="chatbot-toggle" id="chatbotToggle">
+        <i class='bx bx-message-rounded'></i>
+        <span class="chatbot-notification"></span>
+    </button>
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="script.js"></script>
